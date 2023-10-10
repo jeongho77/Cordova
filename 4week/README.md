@@ -1,9 +1,8 @@
 # 4주차 
 <H3>포트폴리오 작성</H3>
-주소 : https://jeongho77.github.io/Cordova/4week/report/index.html 
+주소 : https://jeongho77.github.io/Cordova/4week/report/index.html <br>
 
-![image](https://github.com/jeongho77/Cordova/assets/115057094/e4d02d5d-bac8-48e4-ade2-4ea7d655bdc7)
-
+<img src = "https://github.com/jeongho77/Cordova/assets/115057094/e4d02d5d-bac8-48e4-ade2-4ea7d655bdc7" width = "500" height= "500">
 
 <H3>7,9,10 번문제 풀이화면</H3>
 

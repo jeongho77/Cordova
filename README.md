@@ -4,8 +4,8 @@
 
 <hr>
 
-<h1>2주차 레포트</h1><br>
-자기소개 URL : https://jeongho77.github.io/Cordova/2week/report/intro.html
+    <h1>2주차 레포트</h1><br>
+    <a href =  "https://jeongho77.github.io/Cordova/2week/report/intro.html"> 자기소개</a><br>
     <hr>
     <h1>3주차 레포트</h1><br>
     <a href = "https://jeongho77.github.io/Cordova/2week/report/0921/intro2.html">자기소개 수정</a><br>

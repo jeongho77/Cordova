@@ -4,7 +4,8 @@
 
 <h1>2주차 레포트</h1>
    <a href =  "https://jeongho77.github.io/Cordova/2week/report/intro.html"> 자기소개</a>
-   ![image](https://github.com/jeongho77/Cordova/assets/115057094/01455c8c-a114-452b-b8ab-c291467d4a7f)
+   ![image](https://github.com/jeongho77/Cordova/assets/115057094/28d60ef5-6d8c-4dbb-ab99-a6de25dec154)
+
    <hr>
 <h1>3주차 레포트</h1>
     <a href = "https://jeongho77.github.io/Cordova/2week/report/0921/intro2.html">자기소개 수정</a>

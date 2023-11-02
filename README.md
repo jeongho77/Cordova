@@ -43,7 +43,7 @@
 <hr>
 
 <h1>8주차 레포트</h1>
-<h2>DIT 인공지능소프트웨어과 학과 소개 중 학과갤러리 jquery 변환</h2><br>
+<h2>DIT 인공지능소프트웨어과 학과 소개 중 학과갤러리 jquery 변환</h2><hr>
 <img src = "https://github.com/jeongho77/Cordova/assets/115057094/6b03b609-e5d4-4168-82e5-53d089a61b6c.png" width = "460" height="430"/><br>
 <a href = "https://jeongho77.github.io/Cordova/8week/DIT/index.html#gallery">
 <hr>

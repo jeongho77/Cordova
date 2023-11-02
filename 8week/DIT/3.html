@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery 이미지 갤러리</title>
+  <style>
+    #gallery {
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    #images {
+      width: 1500px;
+    }
+
+    .image {
+      float: left;
+      width: 500px;
+      height: 300px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="gallery">
+    <div id="images">
+      <div class="image">
+        <img src="1.png" alt="이미지 1">
+      </div>
+      <div class="image">
+        <img src="2.png" alt="이미지 2">
+      </div>
+      <div class="image">
+        <img src="3.png" alt="이미지 3">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      const $images = $('#images .image');
+      let currentIndex = 0;
+
+      function showImage(index) {
+        $images.hide();
+        $images.eq(index).show();
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % $images.length;
+        showImage(currentIndex);
+      }
+
+      // 초기 이미지 표시
+      showImage(currentIndex);
+
+      // 2초마다 다음 이미지 표시
+      setInterval(nextImage, 2000);
+    });
+  </script>
+</body>
+</html>

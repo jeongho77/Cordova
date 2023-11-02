@@ -1,0 +1,287 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css"/>
+	<script src="lib/jquery-1.11.1.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.5.min.js"></script>
+	
+<style>
+   li { list-style: none; background-color: midnightblue; color: midnightblue; }
+        .picture {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .picture li {
+            width: 48%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .picture li a {
+            display: block;
+            margin: 5px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+
+        .picture li img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+            object-fit: cover; /* 이미지가 부모 요소에 꽉 차게 설정 */
+        }
+
+		.picture li img:hover { display:block; width:100%;  height:auto;} 
+
+		#slideshow {
+    position: relative;
+    max-width: 100%;
+    height: 300px; /* 원하는 높이로 조정하세요 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* 가운데 정렬을 위한 추가 스타일 */
+    align-items: center; /* 가운데 정렬을 위한 추가 스타일 */
+}
+
+#slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 300px; /* 원하는 높이로 조정하세요 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slideshow img {
+    max-width: 100%;
+    height: 100%;
+}
+
+#fadeToggle {
+    width: 100px; /* 버튼의 너비를 조정 */
+    font-size: 12px;
+    padding: 5px 10px; /* 패딩 조정 */
+    margin-right: 10px; /* 오른쪽 여백 추가 */
+}
+
+</style>
+</head>
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-theme="b" style="background-color: #333; color: #fff;">
+			<h1>DIT 컴퓨터소프트웨어과 소개</h1>
+		 </div>
+		 
+		<div data-role="content" style="text-align:center">
+				<img src="DIT컴퓨터.png" >
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#intro">학과소개</a></li>	
+					<li><a href="#movie" data-rel="dialog">학과영상</a></li>
+					<li><a href="#wizard3-1" data-rel="dialog">학생활동</a></li>
+					<li><a href="#gallery">학과사진</a></li>
+				</ul> 	
+				<div data-role="collapsible">
+					<h3>학교번호</h3>
+					<p>051-860-3114</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>학교사이트</h3>
+					<a href="https://www.dit.ac.kr/cs/" target="_blank">https://www.dit.ac.kr/cs/</a>
+				</div>
+				</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>컴퓨터소프트웨어과_서정호</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>컴퓨터 소프트웨어과</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="학과.png" style = width:400px;>
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>학과 소개</h3>
+					<p>컴퓨터소프트웨어과는 웹 · 모바일앱 · 데이터베이스 · 인공지능 · 사물인터넷 · 클라우드컴퓨팅 등 스마트 IT 산업 분야의 실력있는 소프트웨어 개발 전문가 양성을 목표로 교육하고 있습니다.
+						학생들은 웹 및 모바일 앱개발, 프로그래밍 언어, 데이터베이스, 소프트웨어 설계 및 모델링 등 체계적인 이론과 실습을 통하여 기초 능력을 학습하고, 그 바탕 위에서 다양한 팀 프로젝트 통해
+						심화 학습 및 현장 실무 능력을 키우고 있습니다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>학과 교육 목표</h3>
+					<p>스마트 IT산업을 선도하는 실력 있는 소프트웨어 개발 전문가 양성을 목표로 체계적인 이론, 팀프로젝트, 산학연계에 대한 실무중심 교육을 실시한다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>학과 커리큘럼</h3>
+					<img src = "커리큘럼.png" style = width:700px;>		
+				</div>
+				<div data-role="collapsible" >
+					<h3>학과 교수님소개</h3>
+					<img src = "교수님.png" style = width:400px;>
+					<img src = "교수님2.png" style = width:400px;>
+					<img src = "교수님3.png" style = width:400px;>
+					<img src = "교수님4.png" style = width:400px;>
+
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>컴퓨터소프트웨어과_서정호</h1>
+		</div>		
+	</div>
+
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>학과 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">학과 소개 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/5DZtoD9njmA?si=HqNE7Q1Imq4Q_IKz"></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">컴퓨터소프트웨어과 학생 인터뷰 영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/pvfr2O82Clw?si=cMuRamR4e19cZrW8"></iframe></li><br/>
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1" data-theme="b">
+		<div data-role="header">
+			<h1>학생 활동</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-b">카드맞추기 게임</div><br/>
+			<a href="https://jeongho77.github.io/OSS_zeroCar/index.html" target="_blank">
+				<img class="img-concert" src="game.png" style = "width:470px; height:250px;"  />
+			</a>
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2" data-theme="b">
+		<div data-role="header">
+			<h1>학생 활동</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-b">실종자 찾기 앱 제작</div><br/>			
+			<li><iframe width="100%" height="450" src="https://www.youtube.com/embed/XRMHV6Qy2uY?si=6eDUnfR0thQI1cfS"></iframe></li><br/>
+			</video></li>
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#wizard3-3" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-3" data-theme="b">
+		<div data-role="header">
+			<h1>학생 활동</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-b">의류판매시스템(POS) 시연영상</div><br/>           
+			<video id="myVideo" width="100%" height="450" src="발표.mp4" controls></video>
+			<br>
+		</div>
+	
+		<div data-role="footer">
+			<a href="#wizard3-2" data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	
+		<script type="text/javascript">
+			var video = document.getElementById("myVideo");
+			video.autoplay = false;
+		</script>
+	</div>
+	
+
+	<div data-role="page" id="gallery" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>학과 갤러리</h1>
+			<button id="fadeToggle"> fadeToggle </button>
+		</div>
+		<div data-role="content">
+			
+			<div id="slideshow">
+					
+				<img src="1.png" alt="이미지 1">
+				<img src="2.png" alt="이미지 2">
+				<img src="3.png" alt="이미지 3">
+				<img src="4.png" alt="이미지 4">
+				<img src="5.png" alt="이미지 5">
+				<img src="6.png" alt="이미지 6">
+				<img src="7.png" alt="이미지 7">
+				<img src="8.png" alt="이미지 8">
+				<img src="9.png" alt="이미지 9">
+				
+			</div>
+
+			<ul class="picture">
+				<li><a href="1.png" rel="external"><img src="1.png" /></a></li>	
+				<li><a href="2.png" rel="external"><img src="2.png" /></a></li>	
+				<li><a href="3.png" rel="external"><img src="3.png" /></a></li>	
+				<li><a href="4.png" rel="external"><img src="4.png" /></a></li>	
+				<li><a href="5.png" rel="external"><img src="5.png" /></a></li>	
+				<li><a href="6.png" rel="external"><img src="6.png" /></a></li>
+				<li><a href="7.png" rel="external"><img src="7.png" /></a></li>	
+				<li><a href="8.png" rel="external"><img src="8.png" /></a></li>
+				<li><a href="9.png" rel="external"><img src="9.png" /></a></li>
+            </ul> 
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>컴퓨터소프트웨어과_서정호</h1>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+    const $slideshow = $('#slideshow');
+    const $images = $slideshow.find('img');
+    let currentIndex = 0;
+
+    $('#fadeToggle').click(function() {
+        $slideshow.fadeToggle(1000);
+		
+    });
+
+    function showImage(index) {
+        $images.hide();
+        $images.eq(index).show();
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % $images.length;
+        showImage(currentIndex);
+    }
+
+    // 초기 이미지 표시
+    showImage(currentIndex);
+
+    // 2초마다 다음 이미지 표시
+    setInterval(nextImage, 2000);
+});
+	</script>
+</body>
+</html>
+ 

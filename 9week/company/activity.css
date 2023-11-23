@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'neon';
+    src: url('../font/JalnanOTF.otf') format('opentype');
+}
+/* 전체 스타일 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+
+ header {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: #000;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header img {
+    width: 100px;
+    height: 59px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+nav {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+nav span {
+    margin-right: 5px;
+}
+
+ /* 로그인 버튼 */
+ button {
+    margin: 20px;
+}
+
+
+.write {
+    text-align: center;
+    margin: 10px;
+}
+.w-btn {
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-outline {
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+ .w-btn-indigo {
+    background-color: aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-indigo-outline {
+    border: 3px solid aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-indigo-outline:hover {
+    color: #1e6b7b;
+    background: aliceblue;
+}
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn-outline:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
+
+.w-btn-outline:active {
+    transform: scale(1.5);
+}
+
+.center {
+    margin: 0 auto;
+    display: block;
+}
+
+.postcontainer {
+    width: 100%;
+}
+ /* Footer 스타일 */
+ footer {
+    background-color: aqua;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.page-title {
+    font-family: 'neon';
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.page-title h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.page-title small {
+    font-size: 14px;
+    color: #888;
+}
+
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+    
+    transition: background-color 0.3s ease;
+}
+
+.post:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.post-title {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-content {
+    color: #666;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-meta {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.post div #left {
+    display: flex;
+    width: 85%;
+}
+.post div p {
+    margin-left: 10px;
+}
+.post div #right {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post div #right img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.post div #right small {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.btn-jittery {
+    -webkit-animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
+    height: 60px;
+    width: 120px;
+    background-color: aqua;
+    border-radius: 23px;
+    font-size: 20px;
+}
+
+@-webkit-keyframes jittery {
+    5%, 50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+
+@keyframes jittery {
+    5%, 50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+
+
+*로그인 회원가입버튼
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a:hover{
+    background: red;
+    color: #050801;
+    box-shadow: 0 0 5px #9403f4,
+                0 0 25px #9403f4,
+                0 0 50px #9403f4,
+                0 0 200px#9403f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,red);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,red);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,red);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,red);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+/* 사진첩을 위한 기본 스타일링 */
+/* 사진첩을 위한 기본 스타일링 */
+.board {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.board-li {
+    margin: 10px;
+    flex: 1 0 300px; /* 사진의 최대 너비를 지정 */
+}
+
+.board-li-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.board-li-wrap img {
+    width: 100%; /* 이미지의 너비를 100%로 설정하여 비율 유지 */
+    height: auto;
+    border-radius: 8px;
+    height: 250px;
+}
+
+.pinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 0 0 8px 8px;
+}
+
+.ptitle {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.ptit {
+    display: inline-block;
+    background-color: #f0f0f0;  
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.date {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

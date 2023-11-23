@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'neon';
+    src: url('font/JalnanOTF.otf') format('opentype');
+}
+
+/* 전체 스타일 */
+html {
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    padding-top: 68px;
+}
+
+/* Header 스타일 */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: #000;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header img {
+    width: 100px;
+    height: 59px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+nav {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+nav span {
+    margin-right: 5px;
+}
+
+/* 로그인 버튼 */
+button {
+    margin: 20px;
+}
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-outline {
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px white(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-indigo {
+    background-color: cornsilk;
+    color: #03e9f4;
+}
+
+.w-btn-indigo-outline {
+    border: 3px solid aliceblue;
+    color: #03e9f4;
+}
+
+.w-btn-indigo-outline:hover {
+    color: white;
+    background: aliceblue;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn-outline:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
+
+.w-btn-outline:active {
+    transform: scale(1.5);
+}
+
+.login-success {
+    display: flex;
+    align-items: center;
+}
+
+.postcontainer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.231),
+            rgba(0, 0, 0, 0.8)), url("images/background.jpg");
+    height: 600px;
+    background-color: white;
+    background-size: cover;
+    object-fit: contain;
+    text-align: center;
+   
+    display: flex;
+    background-color:papayawhip;
+
+}
+
+.postcontainer > div:not(.dit) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.postcontainer div {
+   
+    font-family: 'neon';
+    align-items: center;
+    font-size: 3em;
+    background-color:papayawhip;
+}
+
+
+
+.postcontainer h4 {
+    color: black;
+    margin-top: 50px;
+    font-size : 30px;
+}
+
+.postcontainer h5 {
+    color: black;
+    margin-top: 50px;
+    font-size : 20px;
+}
+
+
+
+/* Footer 스타일 */
+footer {
+    background-color: rgb(255, 145, 0);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+/* 스타일링을 위한 CSS 코드를 여기에 작성하세요 */
+.box-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.dit {
+    width: 500px;
+    height: flex;
+    background-color: white;
+}
+
+.postcontainer2 > div:not(.dit) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.postcontainer2 div {
+    font-family: 'neon';
+
+    font-size: 3em;
+    background-color: mistyrose;
+}
+
+.postcontainer2 h3 {
+    color: black;
+    margin-top: 50px;
+    font-size : 45px;
+}
+
+
+
+.postcontainer2 h4 {
+    color: black;
+    margin-top: 50px;
+    font-size : 30px;
+}
+
+.postcontainer2 h5 {
+    color: black;
+    margin-top: 50px;
+    font-size : 20px;
+}
+
+
+.postcontainer2 {
+    display: flex;
+    background-color: beige;
+    overflow: hidden;
+    width: 100%;
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.photo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.dit2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.dit2 div {
+    font-family: 'neon';
+}
+
+.dit2 h3 {
+    color: black;
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+.dit2 h4 {
+    color: black;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.dit2 h5 {
+    color: black;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+.btn-jittery {
+    -webkit-animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
+    height: 60px;
+    width: 120px;
+    background-color: RGB(255, 145, 0);
+    border-radius: 23px;
+    font-size: 20px;
+}
+
+@-webkit-keyframes jittery {
+    5%, 50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+
+@keyframes jittery {
+    5%, 50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+
+
+/* Add this at the end of your existing CSS */
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    header img {
+        width: 80px;
+        height: 47px;
+        margin-left: 10px;
+    }
+
+    nav {
+        margin-left: 10px;
+    }
+
+    nav span {
+        margin-right: 3px;
+        font-size: 14px;
+    }
+
+    .postcontainer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .postcontainer iframe {
+        height: 300px; /* Adjust the height for smaller screens */
+    }
+
+    .postcontainer div:not(.dit) {
+        order: -1;
+    }
+
+    .postcontainer h4 {
+        font-size: 24px;
+    }
+
+    .postcontainer h5 {
+        font-size: 16px;
+    }
+
+    .dit {
+        width: 100%;
+    }
+
+    .btn-jittery {
+        height: 40px;
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .box-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .postcontainer2 h3 {
+        font-size: 30px;
+    }
+
+    .postcontainer2 h4 {
+        font-size: 20px;
+    }
+
+    .postcontainer2 h5 {
+        font-size: 14px;
+    }
+}
+
+
+/* Add this at the end of your existing CSS */
+
+/* Responsive styles for images */
+.photo img,
+.photo2 img {
+    max-width: 50%; /* Make images responsive by scaling them with respect to their container */
+    height: auto;
+}
+
+/* Additional adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+    .postcontainer2 {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .photo,
+    .photo2 {
+        padding: 10px;
+        text-align: center;
+    }
+}

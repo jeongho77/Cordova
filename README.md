@@ -49,8 +49,6 @@
 
 <h1>9주차 레포트</h1>
 <a href = "https://jeongho77.github.io/Cordova/9week/company/index.html">회사소개 반응형 웹 만들기 주제 : 당근마켓</a>
-<a href = "https://jeongho77.github.io/Cordova/9week/company/index.html">당근마켓 회사 소개</a>
-<hr>
 <img src = "https://github.com/jeongho77/Cordova/assets/115057094/477b898c-4d60-4b72-a8bf-7667e768fa3b.png" width = "700" height="430"/><hr>
 <img src = "https://github.com/jeongho77/Cordova/assets/115057094/6e8854e8-04f3-49cc-9dfb-3bcb2b80e077.png" width = "700" height="430"/><hr>                
 <img src = "https://github.com/jeongho77/Cordova/assets/115057094/596da2f5-3195-4eb7-a815-a26a6e7ea707.png" width = "500" height="100%"/><hr>

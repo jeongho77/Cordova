@@ -4,10 +4,10 @@
 <hr>
 
 <br>
-<img src = "https://github.com/jeongho77/Cordova/assets/115057094/ffc9c95e-938b-4f30-9f3e-0c577582c7cf.png" width = "300" height="400"/>
-<img src = "https://github.com/jeongho77/Cordova/assets/115057094/853687ad-6f3d-4043-97c8-92457edc5216.png" width = "300" height="400"/>
-<img src = "https://github.com/jeongho77/Cordova/assets/115057094/54b09dd5-502c-4436-bdf7-cf4133902227.png" width = "300" height="400"/>
-<img src = "https://github.com/jeongho77/Cordova/assets/115057094/aa5cd15b-c4bb-4ae7-84ce-f60cf6ba1b35.png" width = "300" height="400"/><br>
+<img src = "https://github.com/jeongho77/Cordova/assets/115057094/ffc9c95e-938b-4f30-9f3e-0c577582c7cf.png" width = "400" height="400"/>
+<img src = "https://github.com/jeongho77/Cordova/assets/115057094/853687ad-6f3d-4043-97c8-92457edc5216.png" width = "400" height="400"/>
+<img src = "https://github.com/jeongho77/Cordova/assets/115057094/54b09dd5-502c-4436-bdf7-cf4133902227.png" width = "400" height="400"/>
+<img src = "https://github.com/jeongho77/Cordova/assets/115057094/aa5cd15b-c4bb-4ae7-84ce-f60cf6ba1b35.png" width = "400" height="400"/><br>
 
 <hr>
 
